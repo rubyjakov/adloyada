@@ -1,6 +1,10 @@
+/*------------------- index ----------------*/
+
 body {
     margin: 0;
     background-image: linear-gradient(yellow, rgb(223, 99, 99), #9453A6);
+    background-attachment: fixed;
+    height: 100%;
 }
 
 .container-fluid {
@@ -9,11 +13,37 @@ body {
     position: relative;
 }
 
-\
- .nav-item {
+
+.nav-item {
     font-weight: bold;
 
 
+}
+
+.navbar-collapse {
+    margin-left: 30%;
+    width: 500px;
+
+}
+
+.hugger {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+@media (max-width:600px) {
+    .hugger {
+
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+
+
+
+
+
+    }
 }
 
 .video {
@@ -85,4 +115,125 @@ body {
 .footer a {
     text-decoration: none;
     list-style: none;
+}
+
+
+/************* about ***********/
+@media only screen and(max-width:600) {
+    .contact {}
+}
+
+.main-info {
+    text-align: center;
+
+}
+
+.main-info>p {
+    line-height: 3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-info h3 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*----------------------- gallery---------------------- */
+.h1-gallery {
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+@media only screen and (max-width:600px) {
+    .gallery-container {
+        display: grid;
+        grid-template-rows: 1fr;
+
+
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .gallery-container>img {
+        padding: 15px;
+
+
+
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .gallery-videos {
+        display: inline-flex;
+        flex-wrap: wrap;
+
+
+
+
+
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .gallery-videos>iframe {
+        padding: 20px;
+
+
+
+
+
+
+    }
+}
+
+
+.gallery-container img {
+    width: 250px;
+}
+
+.gallery-videos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    padding: 0 20px;
+}
+
+/* ------------------------qa---------------------------- */
+.accordion-flush {
+    margin: auto;
+    width: 50%;
+    direction: rtl;
+}
+
+.accordion-body {
+    color: red;
+    font-weight: bold;
+}
+
+/* ---------------------contact ---------------------------*/
+.needs-validation {
+    direction: rtl;
+
+}
+
+.form-check {
+    position: absolute;
+}
+
+.footer-contact {
+    text-align: center;
+    margin-top: 40%;
 }
